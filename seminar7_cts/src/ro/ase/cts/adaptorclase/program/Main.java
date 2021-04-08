@@ -1,5 +1,7 @@
 package ro.ase.cts.adaptorclase.program;
 
+import java.nio.channels.NonReadableChannelException;
+
 import ro.ase.cts.adaptorclase.clase.AdaptorCreditClase;
 import ro.ase.cts.adaptorclase.clase.CreditAbstract;
 

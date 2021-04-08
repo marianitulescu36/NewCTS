@@ -7,7 +7,7 @@ public class Facade {
 			if(politie.esteUrmarit(persoana)==false) {
 				if(BirouCredite.areCredite(persoana)==false) {
 					return true;
-				}  else {
+				}  else { 
 					return false;
 				}
 			}

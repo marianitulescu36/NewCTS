@@ -10,9 +10,9 @@ public class Main {
 		Persoana persoana = new Persoana("2991128340000", "Maria");
 		
 		if(Facade.esteEligibil(persoana)) {
-			System.out.println("Oferim creditul.");
+			System.out.println("Banca oferia creditul.");
 		} else {
-			System.out.println("Nu oferim creditul.");
+			System.out.println("Banca nu ofera creditul.");
 		}
 
 	}

@@ -12,9 +12,9 @@ public class Main {
 
 		ManagerSala managerSala=new ManagerSala("SalaMea");
 		
-		Observer client1=new Client("Ion");
+		Observer client1=new Client("Ana");
 		Observer client2=new Client("Maria");
-		Observer client3=new Client("Vasile");
+		Observer client3=new Client("Gabi");
 		
 		managerSala.adaugareAbonat(client1);
 		managerSala.adaugareAbonat(client2);

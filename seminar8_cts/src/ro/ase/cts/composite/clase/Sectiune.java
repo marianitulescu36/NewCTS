@@ -3,7 +3,7 @@ package ro.ase.cts.composite.clase;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sectiune implements ComponentaMeniu{
+public class Sectiune implements ComponentaMeniu {
 	private List<ComponentaMeniu> listaComponente;
 	private String numeSectiune;
 	

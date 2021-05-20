@@ -15,8 +15,4 @@ public class Asistent extends PersonalSpital {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	
-	
-
 }

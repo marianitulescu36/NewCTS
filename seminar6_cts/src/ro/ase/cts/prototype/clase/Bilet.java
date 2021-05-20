@@ -7,6 +7,10 @@ public class Bilet implements AbstractPrototype {
 	private String echipa2;
 	private String data;
 	
+	private Bilet() {
+		super();
+	}
+	
 	public Bilet(int codBilet, String echipa1, String echipa2, String data) {
 		super();
 		this.codBilet = codBilet;
@@ -15,13 +19,9 @@ public class Bilet implements AbstractPrototype {
 		this.data = data;
 	}
 	
-	
-
 	public void setCodBilet(int codBilet) {
 		this.codBilet = codBilet;
 	}
-
-
 
 	@Override
 	public String toString() {
@@ -37,12 +37,6 @@ public class Bilet implements AbstractPrototype {
 		builder.append("]");
 		return builder.toString();
 	}
-	
-	private Bilet() {
-		super();
-	}
-
-
 
 	@Override
 	public AbstractPrototype copiaza() {
@@ -56,10 +50,4 @@ public class Bilet implements AbstractPrototype {
 		
 		return bilet;
 	}
-	
-	
-	
-	
-	
-
 }

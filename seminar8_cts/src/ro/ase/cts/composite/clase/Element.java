@@ -1,6 +1,6 @@
 package ro.ase.cts.composite.clase;
 
-public class Element implements ComponentaMeniu{
+public class Element implements ComponentaMeniu {
 	private String numeElement;
 	
 	public Element(String numeElement) {

@@ -14,14 +14,14 @@ public class Main {
 		System.out.println(contClient2);
 		
 		Bilet biletPrototype = new Bilet(1,"Echipa1","Echipa2","01.04.2021");
-       Bilet bilet1= (Bilet) biletPrototype.copiaza();
-       bilet1.setCodBilet(100);
+		Bilet bilet1= (Bilet) biletPrototype.copiaza();
+		bilet1.setCodBilet(100);
        
-       Bilet bilet2= (Bilet) biletPrototype.copiaza();
-       bilet2.setCodBilet(101);
+		Bilet bilet2= (Bilet) biletPrototype.copiaza();
+		bilet2.setCodBilet(101);
        
-       System.out.println(bilet1);
-       System.out.println(bilet2);
+		System.out.println(bilet1);
+		System.out.println(bilet2);
        
 	}
 

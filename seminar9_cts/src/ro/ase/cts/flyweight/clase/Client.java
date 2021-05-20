@@ -11,9 +11,7 @@ public class Client implements Flyweight {
 		this.nrTelefon = nrTelefon;
 		this.email = email;
 	}
-	
-	
-		
+			
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();

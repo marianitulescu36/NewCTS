@@ -19,7 +19,7 @@ public class ContBancar {
 			sold-=suma;
 			System.out.println("S-a retras suma de " + suma);
 		} else {
-			System.out.println("FFonduri insuficiente!");
+			System.out.println("Fonduri insuficiente!");
 		}
 	}
 	

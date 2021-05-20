@@ -12,6 +12,7 @@ public class Main {
 		ContBancar cont = new ContBancar("Maria");
 		ManagerComenzi manager = new ManagerComenzi();
 		manager.invoca(new ComandaConstituire(cont, 100));
+		manager.executaComanda();
 		
 		manager.invoca(new ComandaDepunere(cont, 36));
 		manager.executaComanda();
@@ -21,6 +22,7 @@ public class Main {
 		
 		manager.invoca(new ComandaRetragere(cont, 1000));
 		manager.executaComanda();
+
 	}
 
 }

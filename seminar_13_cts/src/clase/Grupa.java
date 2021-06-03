@@ -11,8 +11,11 @@ public class Grupa {
     private int nrGrupa;
 
     public Grupa(int nrGrupa){
+    	if(nrGrupa<1000||nrGrupa>1100) {
+    		throw new IllegalArgumentException();
+    	}
         this.nrGrupa=nrGrupa;
-        studenti=new ArrayList<>();
+        studenti=new ArrayList<>(); //daca aici era null sau nu era linia, nu trecea Existence
     }
 
     public void importaStudenti(List<IStudent> studenti){
@@ -30,21 +33,27 @@ public class Grupa {
         throw new IndexOutOfBoundsException();
     }
 
-    public float getPromovabilitate(){
+    public List<IStudent> getStudenti() {
+		return studenti;
+	}
+
+	public int getNrGrupa() {
+		return nrGrupa;
+	}
+
+	public float getPromovabilitate(){
+		if(studenti.size()==0) {
+    		throw new IndexOutOfBoundsException();
+    	}
         int nrRestantieri=0;
         for(IStudent student:studenti){
             if(student.areRestante()){
                 nrRestantieri++;
             }
         }
-        return studenti.size()/nrRestantieri;
+        return (studenti.size()-nrRestantieri)/(float)studenti.size();
     }
-
-	public List<IStudent> getStudenti() {
-		return studenti;
-	}
-
-	public int getNrGrupa() {
-		return nrGrupa;
-	}    
+    
+    
+    
 }
